@@ -6,47 +6,180 @@
     <title>responsive navbar</title>
 </head>
 <style>
+    .body{
+        background-color:#8adb8a;
+    }
     .container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-       
+      
+       }
+       .product-image{
+        width:300px;
+       height: 300px;
+        border: 1px solid black;
+        box-shadow: 0 0 10 grey;
+        border-radius: 6px;
+        margin: 5px;
         
     }
-    .product-image{
-        height: 300px;
-        width:280px;
-        border: 1px solid black;
-        margin:10px;
-      
-    }
     .image{
-        height: 150px;
-        width:100%;
+        width: 100%;
+        height: 170px;
+        display: block;
+       
+        border-radius: 6px 6px 0 0;
+        object-fit: cover;
+    }
+   .paragraph{
+        margin: 5px;
+        text-align: justify;
+   }
+   .btn{
+    display: block;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(117, 183, 117);
+    color: aliceblue;
+    margin: 0 auto;
+    cursor: pointer;
+   
+   }
+   .btn2{
+    display: block;
+    width:150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(117, 183, 117);
+    color: aliceblue;
+    margin: 0 auto;
+    cursor: pointer;
+   
+   }
+   a{
+    text-decoration: none;
+    color: aliceblue;
+   }
+  
+   .info{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    border: 0.5px solid grey;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    width:600px;
+    padding: 10px;
+   }
+   .container2{
+    display: flex;
+    justify-content: center;
+    margin: 10 auto;
+   }
+   .about{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+   }
+   .contact-page{
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+ 
+   }
+   .input{
+    width:400px;
+       height: 300px;
+        border: 1px solid black;
+        box-shadow: 0 0 10 grey;
+        border-radius: 6px;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color:#ccffcc;
+        border-radius: 20px;
+    }
+    .box{
+        padding: 10px;
+        border-radius: 10px;
+        border:none;
+        background-color: rgb(77, 250, 189);
+    }
+    .nav{
+        display: block;
+        background-color: #008000;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display:flex;
 
     }
-   
 </style>
 <body>
+    <div class="nav">
+        <div>Home</div>
+        <div>menue</div>
+        <div>services</div>
+        <div><input type="text"placeholder="search"></div>
+    </div>
     <div class="container">
         <div class="product-image">
             <img src="https://slickgarden.com/wp-content/uploads/2020/08/vegetable-garden-3-768x486.jpg" alt="img" class="image">
+            <p class="paragraph">The carrot fruit has various types, including orange, purple, yellow, white, red, and baby carrots.</p>
+            <button class="btn"><a href="https://youtu.be/JALCpDhAsXo?si=dKkDdDeMch4x7-GU">know More</a></button>
         </div>
         <div class="product-image">
             <img src="https://tse3.mm.bing.net/th/id/OIP.txVKOkSsrmagGwsuyEWXfwAAAA?w=139&h=208&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="image"alt="image">
+            <p class="paragraph">Zizyphus jujuba, often known as ber fruit, is a soft, flesh, crispy fruit with a sweet and sugary taste.</p>
+            <button class="btn"><a href="https://youtu.be/JALCpDhAsXo?si=dKkDdDeMch4x7-GU">know More</a></button>
         </div>
         <div class="product-image">
             <img src="https://tse2.mm.bing.net/th/id/OIP.OVbmEWHw9LqYu0_7UNfrfAHaE8?w=237&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"class="image" alt="">
+            <p class="paragraph">An apple is a pome fruit that grows on the apple tree (Malus domestica)</p>
+            <button class="btn"><a href="https://youtu.be/JALCpDhAsXo?si=dKkDdDeMch4x7-GU">know More</a></button>
         </div>
         <div class="product-image">
             <img src="https://tse2.mm.bing.net/th/id/OIP.b2wvh463IJqMU-OvnSpiAwHaKK?w=143&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7"class="image" alt="">
+            <p class="paragraph">Papaya (Carica papaya L.) is a popular fruit native to tropical America. It is usually grown for its small to large melon-like fruit.</p>
+            <button class="btn"><a href="https://youtu.be/JALCpDhAsXo?si=dKkDdDeMch4x7-GU">know More</a></button>
+            
         </div>
         <div class="product-image">
             <img src="https://tse2.mm.bing.net/th/id/OIP.dhw6dlwocVxMeKKL9_FUOgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="image"alt="">
+            <p class="paragraph">The tomato , Solanum lycopersicum, is a plant whose fruit is an edible berry that is eaten as a vegetable. </p>
+            <button class="btn"><a href="https://youtu.be/JALCpDhAsXo?si=dKkDdDeMch4x7-GU">know More</a></button>
+            
         </div>
         <div class="product-image">
             <img src="https://tse4.mm.bing.net/th/id/OIP.l0Ih79pZLCREjAnHbxIovAHaHa?w=196&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="image"alt="">
+            <p class="paragraph">Mixed dried fruit is simply a combination of various dried fruits, which can include anything from raisins, apricots, and cranberries to exotic choices like mangoes, goji berries, and pineapple.</p>
+            <button class="btn"><a href="https://youtu.be/JALCpDhAsXo?si=dKkDdDeMch4x7-GU">know More</a></button>
         </div>
     </div>
+ 
+  <div class="container2">
+    
+  <div class="info"> <p class="about">About Us</p>Welcome to healthy with us, your trusted source for fresh, high-quality vegetables! We are passionate about providing healthy, sustainable, and locally grown produce to nourish you and your family. Our team works closely with local farmers to ensure that every vegetable we offer is not only fresh but also grown with care and respect for the environment.
+
+    At healthy with us, we believe that eating fresh and nutritious vegetables is the key to a healthier lifestyle. Whether you're preparing a quick meal or planning a gourmet dish, our wide selection of vegetables will meet your needs. From leafy greens to root vegetables, we have something for everyone.
+</div>
+</div>
+<div class="contact-page">
+    <div class="input">
+        <h2>
+        Contact Us</h2>
+    
+        <input type="text"  class="box"placeholder="enter your name"><br><br>
+        <input type="email" class="box"placeholder="enter your email"><br><br>
+        <button class="btn2">submit</button>
+    </div>
+    
+</div> 
 </body>
 </html>
