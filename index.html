@@ -9,6 +9,7 @@
     .body{
         background-color:#8adb8a;
     }
+    
     .container{
         display: flex;
         flex-wrap: wrap;
@@ -19,10 +20,14 @@
         width:300px;
        height: 300px;
         border: 1px solid black;
-        box-shadow: 0 0 10 grey;
+       box-shadow: 2px 2px#192819;
         border-radius: 6px;
-        margin: 5px;
+        margin: 10px;
+        transition: transform 0.2s ease;
         
+    }
+    .product-image:hover{
+        transform: translateY(-5px);
     }
     .image{
         width: 100%;
@@ -98,18 +103,18 @@
         border-radius: 6px;
         flex-wrap: wrap;
         text-align: center;
-        background-color:#ccffcc;
+        background-color:#4c784c;
         border-radius: 20px;
     }
     .box{
         padding: 10px;
         border-radius: 10px;
         border:none;
-        background-color: rgb(77, 250, 189);
+        background-color: rgb(229, 238, 236);
     }
     .nav{
-        display: block;
-        background-color: #008000;
+       
+        background-color: #2a322a;
         padding: 10px;
         text-align: center;
         width: 100%;
@@ -118,16 +123,123 @@
         top: 0;
         z-index: 100;
         display:flex;
-
+        
+        }
+        .brand{
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .icon{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .home{
+           
+          margin-left: 500px;
+          color:white; 
+        }
+        .menue{
+         
+            margin-left: 100px;
+            color:white;  
+        }
+        
+        .input2{
+            border-radius: 20px;
+            margin-left: 150px;
+            border:none;
+            padding:15px;
+        }
+        h2{
+            color:white;
+        }
+        .menue:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .home:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .white{
+            height: 80px;
+            display: none;
     }
+      /* Mobile */
+@media (max-width: 600px) {
+    .menue {
+        display: none;
+    }
+
+    .input3{
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .white{
+         height: 60px;
+        display: block;
+        margin-left: auto; 
+        padding-left: 10px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 850px) {
+    .menue {
+        margin-left: 100px; 
+    }
+
+    .input3 {
+        display: none;
+    }
+
+    .home {
+        margin-left: 200px;
+    }
+    .white {
+        display: none; 
+    }
+}
+
+/* Laptop  */
+@media (min-width: 801px) {
+    .menue {
+        margin-left: 300px; 
+    }
+
+    .input3 {
+        display: none;
+    }
+
+    .home {
+        margin-left: 300px;
+    }
+    .white {
+        display: none; 
+    }
+}
+
+
 </style>
 <body>
     <div class="nav">
-        <div>Home</div>
-        <div>menue</div>
-        <div>services</div>
-        <div><input type="text"placeholder="search"></div>
+        <div class="brand">
+            <img src="https://img.freepik.com/free-vector/different-kind-vegetables_1308-28391.jpg?ga=GA1.1.76273901.1735469881&semt=ais_hybrid"height="60px"alt="">
+            <h2>HEALTHY LIFE</h2>
+        </div>
+        <div class="home">Home</div>
+        <div class="menue">menu</div>    
+           <div ><input type="text"class="input3" placeholder="search"></div>
+
+        <img src="menu.png"class="white" alt="image">
+        
     </div>
+</div>
     <div class="container">
         <div class="product-image">
             <img src="https://slickgarden.com/wp-content/uploads/2020/08/vegetable-garden-3-768x486.jpg" alt="img" class="image">
